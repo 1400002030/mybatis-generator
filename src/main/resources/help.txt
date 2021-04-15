@@ -1,2 +1,2 @@
 mybatis-generator:generate
-eclipse运行方式：邮件pom run as 输入上述命令
+eclipse运行方式：右键pom.xml run as 输入上述命令
