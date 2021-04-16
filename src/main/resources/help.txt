@@ -1,2 +1,3 @@
 mybatis-generator:generate
 eclipse运行方式：右键pom.xml run as 输入上述命令
+不同的数据库需在pom文件修改数据库驱动依赖，并在generatorConfig.xml修改驱动包名称
