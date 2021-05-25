@@ -18,6 +18,7 @@
                     <overwrite>true</overwrite>
                 </configuration>
                <dependencies>
+               <!-- 其他的数据库，需要修改依赖 -->
                    <dependency>
 					    <groupId>mysql</groupId>
 					    <artifactId>mysql-connector-java</artifactId>
@@ -25,7 +26,6 @@
 					</dependency>
                 </dependencies>
             </plugin>
-
         </plugins>
-    </build>
+  </build>
 </project>

@@ -2,14 +2,13 @@
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
 	<!-- 数据库驱动包位置,可在pom里面依赖 -->
-	<!--  <classPathEntry location="d:\" /> --> 
+	<!--  <classPathEntry location="d:\xxx.jar" /> --> 
 	<context id="DB2Tables" targetRuntime="MyBatis3">
 		<commentGenerator>
 			<property name="suppressAllComments" value="true" />
 		</commentGenerator>
 		<!-- 数据库驱动，不同的数据库驱动不一样，数据库链接URL、用户名、密码 -->
-		 <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/demo?characterEncoding=utf8" userId="demo" password="123456"> 
-		</jdbcConnection>
+		 <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/demo?characterEncoding=utf8" userId="demo" password="123456"/> 
 		<javaTypeResolver>
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
@@ -26,7 +25,7 @@
 		<javaClientGenerator type="XMLMAPPER" targetPackage="com.demo.dao" targetProject="src\main\java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
-		<!-- 要生成那些表(更改tableName和domainObjectName就可以) -->
+		<!-- 要生成那些表(更改tableName表名和domainObjectName实体名 -->
 		<table tableName="person" domainObjectName="Person" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
 	</context>
 </generatorConfiguration>
